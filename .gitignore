@@ -141,9 +141,8 @@ sdist/
 var/
 wheels/
 pip-wheel-metadata/
-share/python-wheels/
+share/python-wheels
 *.egg-info/
-.installed.cfg
 *.egg
 MANIFEST
 
@@ -179,8 +178,15 @@ yarn.lock
 TODO.md
 PERSONAL_NOTES.md
 
-# Projects directory - Work-in-progress projects (not version controlled)
-# Completed projects should be moved to examples/
-# Use cloud sync (iCloud/Dropbox) for backup and multi-device access
+# Projects directory - Work-in-progress projects are usually not version controlled.
+# For this FeGenie/Codex test, keep the source PNG and generated project files trackable.
 projects/*
 !projects/README.md
+!projects/FeGenie.png
+!projects/fegenie/
+!projects/fegenie/**
+
+# Keep PPT Master exports visible for Codex/GitHub PR download.
+!exports/
+!exports/**
+!*.pptx
